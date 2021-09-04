@@ -1,0 +1,8 @@
+corpora
+download_corpora
+punkt
+averaged_perceptron_tagger
+stopwords
+wordnet
+maxent_ne_chunker
+words
