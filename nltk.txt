@@ -1,4 +1,3 @@
-corpora
 punkt
 averaged_perceptron_tagger
 stopwords
