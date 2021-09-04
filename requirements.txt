@@ -8,6 +8,7 @@ Jinja2==3.0.1
 joblib==1.0.1
 MarkupSafe==2.0.1
 nltk==3.6.2
+pycountry==20.7.3
 regex==2021.8.28
 textblob==0.15.3
 tqdm==4.62.2
