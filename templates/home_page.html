@@ -28,6 +28,9 @@
                 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
                 color: rgb(16, 24, 26);
             }
+            p{
+                display: inline;
+            }
 
         </style>
 
@@ -75,8 +78,13 @@
                     <textarea class="result" rows="10" cols="70" value="paragraph" placeholder="We will get your result here">{{text}}</textarea>
                     
                 </div>
-                <br><br>  
-                <div class="translate">
+                <br>
+                <div>
+                    <p style="margin-left: 8%;">Given Language - {{input_lang}}</p>
+                    <p style="margin-left: 42%;">Translated Language - {{value}}</p>    
+                </div>
+                <br>
+               <div class="translate">
                     <button style="align-content: center;" class = "submit" type="submit">Translate</button>
                 </div>
                
