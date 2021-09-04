@@ -16,7 +16,12 @@ def result():
     input = request.form.get('paragraph')
     lang_code, value = request.form.get('languages').split('-')
     blob = TextBlob(input)
+    print(input)
+    print(lang_code)
+    print(value)
+    print(blob)
     text = str(blob.translate(to=lang_code))
+    print(text)
     return render_template('home_page.html', text=text, input = input, lang_code = lang_code, value = value)
 
 
