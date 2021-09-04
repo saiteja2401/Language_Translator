@@ -1,0 +1,92 @@
+<html>
+    <head>
+        <style>
+            form {text-align: left;}
+            div.text{
+                text-align: justify;
+            }
+            div.content_text {text-align: center;}
+            div.translate{
+                text-align: center;
+            }
+            div.main{
+                text-align: center;
+            }
+            img.image {
+                        display: block;
+                        margin-left: auto;
+                        margin-right: auto;
+                        width: 40%;
+                        height: 40%;
+                        }
+            body {
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-color: rgba(85, 104, 105, 0.637);
+            }
+            h2{
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                color: rgb(16, 24, 26);
+            }
+
+        </style>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    </head>
+    <title>Word Count</title>
+    
+    <body >
+        
+        <img class = "image" src="https://previews.123rf.com/images/file404/file4041502/file404150200382/36068764-translator-speaks-different-languages-illustration.jpg" alt="word-counter" width="200" height="200"><br><br>
+        <div class="Home">
+            <h2 style="text-align: center;">Translation Made Easy</h2>
+            <form action="/", method = "post">
+                <div class="main">
+
+                
+                    <textarea rows="10" cols="70" name="paragraph" placeholder="Type or paste">{{input}}</textarea>
+                    <label name="choose">Choose a language:</label>
+                    <select id="language" name="languages" size="1" placeholder="select">
+                        <option  value={{lang_code}}>{{value}}</option>
+                        <option value="en-English" name ="en" >English</option>
+                        <option value="af-Afrikaans" name="af" >Afrikaans</option>
+                        <option value="sq-Albanian" name="sq" >Albanian</option>
+                        <option value="ar-Arabic" name="ar" >Arabic</option>
+                        <option value="bn-Bengali" name="bn" >Bengali</option>
+                        <option value="zh-Chinese" name="zh" >Chinese</option>
+                        <option value="fr-French" name="fr" >French</option>
+                        <option value="de-German" name="de" >German</option>
+                        <option value="gu-Gujarati" name="gu" >Gujarati</option>
+                        <option value="hi-Hindi" name="hi" >Hindi</option>
+                        <option value="ja-Japanese" name="ja" >Japanese</option>
+                        <option value="kn-Kannada" name="kn" >Kannada</option>
+                        <option value="ko-Korean" name="ko" >Korean</option>
+                        <option value="ml-Malayalam" name="ml" >Malayalam</option>
+                        <option value="mr-Marathi" name="mr" >Marathi</option>
+                        <option value="ne-Nepali" name="ne" >Nepali</option>
+                        <option value="or-Odia" name="or" >Odia</option>
+                        <option value="pa-Punjabi" name="pa" >Punjabi</option>
+                        <option value="ru-Russian" name="ru" >Russian</option>
+                        <option value="ta-Tamil" name="ta" >Tamil</option>
+                        <option value="te-Telugu" name="te" >Telugu</option>
+                        <option value="ur-Urdu" name="ur" >Urdu</option>
+                        
+                    </select>
+                    <textarea class="result" rows="10" cols="70" value="paragraph" placeholder="We will get your result here">{{text}}</textarea>
+                    
+                </div>
+                <br><br>  
+                <div class="translate">
+                    <button style="align-content: center;" class = "submit" type="submit">Translate</button>
+                </div>
+               
+            </form>
+        </div>
+        <br>
+        <div class="content_text">
+            <p style="text-align: center;">Enter (by typing directly or using copy paste) your text and find out how many words and characters it contains.</p>
+        </div>
+    </div>
+                
+    </body>
+</html>
